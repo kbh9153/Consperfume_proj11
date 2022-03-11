@@ -1,0 +1,18 @@
+@import "./reset.css";
+@import "./common.css";
+
+/* component */
+@import "./component/nav-bar.css";
+@import "./component/main_slide.css";
+@import "./component/contents_intro.css";
+@import "./component/product_card.css";
+@import "./component/footer.css";
+
+body {
+   width: 100%;
+}
+
+.wrapper {
+   position: relative;
+   height: 600vh;
+}

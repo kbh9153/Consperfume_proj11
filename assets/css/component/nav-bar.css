@@ -1,0 +1,85 @@
+.nav-bar {
+   display: flex;
+   flex-direction: column;
+   font-family: "Noto Serif KR", serif;
+   font-size: 17px;
+   align-items: center;
+   background-color: #f3f2ed;
+   z-index: 100;
+   width: 100%;
+   position: fixed;
+   top: 0;
+}
+
+.nav-bar__logo {
+   margin: 15px auto 0px auto;
+}
+
+.nav-bar__logo__img {
+   width: 120px;
+   height: 120px;
+   background-image: url("../../img/logo-removebg-preview.png");
+   background-size: cover;
+   background-position: center;
+}
+
+.nav-bar__menu {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.nav-bar__left {
+   display: flex;
+   height: 80px;
+   justify-content: center;
+   align-items: center;
+}
+
+.nav-bar__left li {
+   margin: 0px 25px;
+}
+
+.nav-bar__division {
+   margin: 0px 20px;
+}
+
+.nav-bar__right {
+   display: flex;
+   height: 80px;
+   justify-content: center;
+   align-items: center;
+   margin-right: 40px;
+}
+
+.nav-bar__right li {
+   margin: 0px 30px;
+}
+
+.nav-bar__icon {
+   display: flex;
+   height: 80px;
+}
+
+.nav-bar__icon li {
+   height: 100%;
+   display: flex;
+   align-items: center;
+   margin: 0px 19px;
+}
+
+.nav-bar__icon a {
+   width: 100%;
+}
+
+.nav-bar__icon img {
+   display: block;
+   width: 30px;
+}
+
+.nav-bar__division {
+   height: 25px;
+   width: 2px;
+   background-color: black;
+   opacity: 0.1;
+}
