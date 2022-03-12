@@ -1,16 +1,115 @@
-.footer {
+footer {
    background-color: #f3f2ed;
    width: 100%;
-   height: 350px;
+   height: 450px;
+   font-family: "Noto Sans KR", sans-serif;
    position: absolute;
    bottom: 0;
+}
+
+.footer-top {
+   display: flex;
+   justify-content: center;
+   padding-top: 70px;
+}
+
+.footer-top div {
+   height: 175px;
+   width: 600px;
+   text-align: center;
+   font-weight: 300;
+   font-size: 15px;
+}
+
+.footer-guide {
+   border-right: 1px solid rgba(128, 128, 128, 0.1);
+   border-left: 1px solid rgba(128, 128, 128, 0.1);
+}
+
+.footer-guide__title {
+   font-size: 17px;
+}
+
+.footer-guide__contact {
+   font-size: 21px;
+   font-weight: 400;
+   padding: 12px 0px 10px 0px;
+}
+
+.footer-guide__icon a:nth-child(2) {
+   margin: 0px 17px;
+}
+
+.footer-guide__time {
+   font-size: 14px;
+   line-height: 1.8;
+   padding-bottom: 17px;
+}
+
+.footer-home {
+   display: flex;
+   flex-direction: column;
+}
+
+.footer-home a {
+   padding-bottom: 19px;
+}
+
+.footer-account {
+   display: flex;
+   flex-direction: column;
+}
+
+.footer-account__title {
+   font-size: 16px;
+   font-weight: 400;
+}
+
+.footer-account span {
+   padding-top: 14px;
+   font-size: 14px;
+}
+
+span.footer-account__hope {
+   padding-top: 25px;
+   font-size: 15px;
+   font-weight: 500;
+}
+
+.footer-bot {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   font-weight: 300;
+   font-size: 13px;
+   padding-top: 65px;
+}
+
+.footer-bot__info {
    display: flex;
    justify-content: center;
 }
 
-.footer div {
-   height: 200px;
-   width: 200px;
-   text-align: center;
-   background-color: skyblue;
+.footer-bot__info span {
+   margin-right: 3px;
+   font-weight: 500;
+   opacity: 0.4;
+}
+
+.footer-bot__info li {
+   margin-right: 15px;
+}
+
+.footer-bot__warning {
+   padding: 12px 0px 20px 0px;
+   font-size: 14px;
+   font-weight: 500;
+   opacity: 0.4;
+}
+
+.footer-bot__copy {
+   font-weight: 500;
+   opacity: 0.4;
 }
