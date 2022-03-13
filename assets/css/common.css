@@ -9,12 +9,22 @@
 
 .card-title {
    font-family: "Noto Serif KR", serif;
-   font-weight: 300;
 }
 
 .card-explain {
    font-family: "Noto Sans KR", sans-serif;
-   font-weight: 200;
+}
+
+.perfume-card__collection {
+   display: flex;
+   justify-content: center;
+}
+
+.perfume-card__body {
    text-align: center;
-   line-height: 1.6;
+}
+
+.perfume-card img,
+.perfume-card .new-card-img {
+   margin-bottom: 15px;
 }

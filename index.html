@@ -4,6 +4,7 @@
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" sizes="16x16 32x32 64x64" href="./assets/img/favicon.jpg">
       <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500&display=swap" rel="stylesheet" />
       <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet" />
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
@@ -74,12 +75,12 @@
                   </div>
                </div>
 
-               <div class="month-perfume-card__collection max-width">
-                  <div class="card month-perfume-card" style="width: 30rem">
+               <div class="perfume-card__collection max-width">
+                  <div class="card perfume-card" style="width: 30rem">
                      <img src="./assets/img/product_cards_imgs/Jomalone_popy&barley.jpg" class="card-img-top" alt="Product" />
-                     <div class="card-body month-perfume-card__body">
-                        <p class="card-text card-title">피오니 꽃잎이 살결에 닿는 순간</p>
-                        <p class="card-text card-explain">선홍빛 뺨으로 물든 미소처럼 편안한 아룸다움을 선사합니다.</p>
+                     <div class="card-body perfume-card__body">
+                        <p class="card-text month-card-title card-title">피오니 꽃잎이 살결에 닿는 순간</p>
+                        <p class="card-text month-card-explain card-explain">선홍빛 뺨으로 물든 미소처럼 편안한 아룸다움을 선사합니다.</p>
                         <a class="view-more"
                            >view more
                            <i class="fa-solid fa-angle-right"></i>
@@ -87,11 +88,11 @@
                      </div>
                   </div>
 
-                  <div class="card month-perfume-card" style="width: 30rem">
+                  <div class="card perfume-card" style="width: 30rem">
                      <img src="./assets/img/product_cards_imgs/Jomalone_popy&barley.jpg" class="card-img-top" alt="Product" />
-                     <div class="card-body month-perfume-card__body">
-                        <p class="card-text card-title">그 남자의 눈빛이 예사롭지 않아</p>
-                        <p class="card-text card-explain">
+                     <div class="card-body perfume-card__body">
+                        <p class="card-text month-card-title card-title">그 남자의 눈빛이 예사롭지 않아</p>
+                        <p class="card-text month-card-explain card-explain">
                            바이레도도 이렇게 섹시해질 수 있어요.
                            <br />
                            거친 오우드를 바이레도식 세련미로 풀어냈습니다.
@@ -103,11 +104,11 @@
                      </div>
                   </div>
 
-                  <div class="card month-perfume-card" style="width: 30rem">
+                  <div class="card perfume-card" style="width: 30rem">
                      <img src="./assets/img/product_cards_imgs/Jomalone_popy&barley.jpg" class="card-img-top" alt="Product" />
-                     <div class="card-body month-perfume-card__body">
-                        <p class="card-text card-title">블랙커런트 잉크로 써보는 한 편의 시</p>
-                        <p class="card-text card-explain">
+                     <div class="card-body perfume-card__body">
+                        <p class="card-text month-card-title card-title">블랙커런트 잉크로 써보는 한 편의 시</p>
+                        <p class="card-text month-card-explain card-explain">
                            달콤한 우드 향기 위 펼쳐지는 양귀비 꽃의 낭만,
                            <br />
                            중성적인 산뜻함으로 남녀 모두에게 사랑받고 있어요
@@ -132,22 +133,112 @@
             </section>
 
             <section class="new-perfume max-width">
-               <div class="contents-intro">
-                  <p class="contents-intro__index">What’s new</p>
-                  <p class="contents-intro__title">새로 입고된 상품</p>
-                  <div class="bar"></div>
+               <div class="contents-intro__wrapper max-width">
+                  <div class="contents-intro">
+                     <p class="contents-intro__index">What’s new</p>
+                     <p class="contents-intro__title">새로 입고된 상품</p>
+                     <div class="bar"></div>
+                  </div>
                </div>
 
-               <div class="month-perfume-card__collection max-width">
-                  <div class="card month-perfume-card" style="width: 30rem">
-                     <img src="./assets/img/product_cards_imgs/Jomalone_popy&barley.jpg" class="card-img-top" alt="Product" />
-                     <div class="card-body month-perfume-card__body">
-                        <p class="card-text card-title">피오니 꽃잎이 살결에 닿는 순간</p>
-                        <p class="card-text card-explain">선홍빛 뺨으로 물든 미소처럼 편안한 아룸다움을 선사합니다.</p>
-                        <a class="view-more"
-                           >view more
-                           <i class="fa-solid fa-angle-right"></i>
-                        </a>
+               <div class="perfume-card__collection new-perfume-card__collection max-width">
+                  <div class="new-card__wrapper">
+                     <div class="card perfume-card new-perfume-card">
+                        <a href="#" class="card-img-top new-card-img"></a>
+                        <div class="card-body perfume-card__body new-card__body">
+                           <p class="card-text new-card-title card-title">마크제이콥스 스플래쉬 레인 100ml <a href="#"><img src="./assets/icon/search_magnifier_icon_145939.svg" alt="search" /></a></p>
+                           <p class="card-text new-card-explain card-explain">소나기가 한차례 쏟아진 정원,
+                           <br />
+                           바닥에서부터 피오오르는 꽃들의 향기</p>
+                           <span class="new-card-price__cover">80,000원</span>
+                           <span class="new-card-price__discount">60,000원</span>
+                           <a href="#" class="review"><span>리뷰: 356</span></a>
+                           <div class="price-discount__percent">
+                              <span>25%</span>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="card perfume-card new-perfume-card">
+                        <a href="#" class="card-img-top new-card-img"></a>
+                        <div class="card-body perfume-card__body new-card__body">
+                           <p class="card-text new-card-title card-title">마크제이콥스 스플래쉬 레인 100ml <a href="#"><img src="./assets/icon/search_magnifier_icon_145939.svg" alt="search" /></a></p>
+                           <p class="card-text new-card-explain card-explain">소나기가 한차례 쏟아진 정원,
+                           <br />
+                           바닥에서부터 피오오르는 꽃들의 향기</p>
+                           <span class="new-card-price__cover">80,000원</span>
+                           <span class="new-card-price__discount">60,000원</span>
+                           <a href="#" class="review"><span>리뷰: 356</span></a>
+                           <div class="price-discount__percent">
+                              <span>25%</span>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="card perfume-card new-perfume-card">
+                        <a href="#" class="card-img-top new-card-img"></a>
+                        <div class="card-body perfume-card__body new-card__body">
+                           <p class="card-text new-card-title card-title">마크제이콥스 스플래쉬 레인 100ml <a href="#"><img src="./assets/icon/search_magnifier_icon_145939.svg" alt="search" /></a></p>
+                           <p class="card-text new-card-explain card-explain">소나기가 한차례 쏟아진 정원,
+                           <br />   
+                           바닥에서부터 피오오르는 꽃들의 향기</p>
+                           <span class="new-card-price__cover">80,000원</span>
+                           <span class="new-card-price__discount">60,000원</span>
+                           <a href="#" class="review"><span>리뷰: 356</span></a>
+                           <div class="price-discount__percent">
+                              <span>25%</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="new-card__wrapper">
+                     <div class="card perfume-card new-perfume-card">
+                        <a href="#" class="card-img-top new-card-img"></a>
+                        <div class="card-body perfume-card__body new-card__body">
+                           <p class="card-text new-card-title card-title">마크제이콥스 스플래쉬 레인 100ml <a href="#"><img src="./assets/icon/search_magnifier_icon_145939.svg" alt="search" /></a></p>
+                           <p class="card-text new-card-explain card-explain">소나기가 한차례 쏟아진 정원,
+                           <br />   
+                           바닥에서부터 피오오르는 꽃들의 향기</p>
+                           <span class="new-card-price__cover">80,000원</span>
+                           <span class="new-card-price__discount">60,000원</span>
+                           <a href="#" class="review"><span>리뷰: 356</span></a>
+                           <div class="price-discount__percent">
+                              <span>25%</span>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="card perfume-card new-perfume-card">
+                        <a href="#" class="card-img-top new-card-img"></a>
+                        <div class="card-body perfume-card__body new-card__body">
+                           <p class="card-text new-card-title card-title">마크제이콥스 스플래쉬 레인 100ml <a href="#"><img src="./assets/icon/search_magnifier_icon_145939.svg" alt="search" /></a></p>
+                           <p class="card-text new-card-explain card-explain">소나기가 한차례 쏟아진 정원,
+                           <br />   
+                           바닥에서부터 피오오르는 꽃들의 향기</p>
+                           <span class="new-card-price__cover">80,000원</span>
+                           <span class="new-card-price__discount">60,000원</span>
+                           <a href="#" class="review"><span>리뷰: 356</span></a>
+                           <div class="price-discount__percent">
+                              <span>25%</span>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="card perfume-card new-perfume-card">
+                        <a href="#" class="card-img-top new-card-img"></a>
+                        <div class="card-body perfume-card__body new-card__body">
+                           <p class="card-text new-card-title card-title">마크제이콥스 스플래쉬 레인 100ml <a href="#"><img src="./assets/icon/search_magnifier_icon_145939.svg" alt="search" /></a></p>
+                           <p class="card-text new-card-explain card-explain">소나기가 한차례 쏟아진 정원,
+                           <br />   
+                           바닥에서부터 피오오르는 꽃들의 향기</p>
+                           <span class="new-card-price__cover">80,000원</span>
+                           <span class="new-card-price__discount">60,000원</span>
+                           <a href="#" class="review"><span>리뷰: 356</span></a>
+                           <div class="price-discount__percent">
+                              <span>25%</span>
+                           </div>
+                        </div>
                      </div>
                   </div>
                </div>
@@ -191,7 +282,7 @@
             <div class="footer-bot">
                <ul class="footer-bot__info">
                   <li>
-                     <span>상호명</span>
+                     <span>페이지명</span>
                      컨스퍼퓸
                   </li>
                   <li>
@@ -199,7 +290,7 @@
                      김병현
                   </li>
                   <li>
-                     <span>고객문의</span>
+                     <span>관련문의</span>
                      010-3857-5648
                   </li>
                   <li>
@@ -208,7 +299,7 @@
                   </li>
                   <li>
                      <span>개인정보보호책임자</span>
-                     <a href="https://github.com/kbh9153">김병현 (https://github.com/kbh9153)</a>
+                     <a href="https://github.com/kbh9153" target="_blank">김병현 (https://github.com/kbh9153)</a>
                   </li>
                </ul>
                <p class="footer-bot__warning"">※ 컨스퍼퓸에서 제공하는 모든 컨텐츠는 학습 목적으로 제작되었으며 상업적 목적이 없음을 알립니다. 무단으로 복제 및 배포하여 상업적 이용, 불법행위에 관련하여 이용할 경우 법적 처벌을 받을 수 있습니다.</p>
