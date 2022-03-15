@@ -2,6 +2,12 @@
    margin-top: 215px;
 }
 
+.signup-wrapper {
+   margin: 0 auto;
+   max-width: 950px;
+   width: 100%;
+}
+
 .signup-title {
    font-family: "Noto Serif KR", serif;
    font-size: 34px;
@@ -9,11 +15,44 @@
    padding: 100px 0 50px 0;
 }
 
-.signup-kind tr td {
+.signup-kind__td {
    display: flex;
    align-items: center;
 }
 
 #private-member {
    margin-right: 7px;
+}
+
+.signup-kind__th {
+   padding: 25px 0 20px 0;
+}
+
+.signup-basicinfo {
+   font-family: "Noto Sans KR", sans-serif;
+   font-size: 20px;
+   padding: 50px 0 10px 0;
+   text-align: start;
+}
+
+.signup-required {
+   font-family: "Noto Sans KR", sans-serif;
+   font-weight: 300;
+   opacity: 0.8;
+   font-size: 14px;
+   text-align: end;
+   margin: -17px 0 5px 0;
+}
+
+.signup-submit {
+   height: 50px;
+   width: 180px;
+   font-size: 13px;
+   color: white;
+   font-weight: 400;
+   background-color: #222222;
+   font-family: "Noto Sans KR", sans-serif;
+   border: none;
+   border-radius: 5px;
+   margin-top: 30px;
 }
