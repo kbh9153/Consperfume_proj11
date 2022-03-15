@@ -7,6 +7,7 @@
 @import "./component/contents_intro.css";
 @import "./component/product_card.css";
 @import "./component/footer.css";
+@import "./component/signup.css";
 
 body {
    width: 100%;

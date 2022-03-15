@@ -1,0 +1,19 @@
+.signup {
+   margin-top: 215px;
+}
+
+.signup-title {
+   font-family: "Noto Serif KR", serif;
+   font-size: 34px;
+   text-align: center;
+   padding: 100px 0 50px 0;
+}
+
+.signup-kind tr td {
+   display: flex;
+   align-items: center;
+}
+
+#private-member {
+   margin-right: 7px;
+}

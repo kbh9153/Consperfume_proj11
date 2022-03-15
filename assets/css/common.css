@@ -3,6 +3,8 @@
    margin: 0 auto;
 }
 
+/* proudct_card */
+
 .card {
    border: none;
 }
@@ -27,4 +29,26 @@
 .perfume-card img,
 .perfume-card .new-card-img {
    margin-bottom: 15px;
+}
+
+/* signup */
+
+table {
+   font-family: "Noto Sans KR", sans-serif;
+   font-size: 15px;
+   border-top: 1px solid rgba(0, 0, 0, 0.15);
+   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+   margin: 0 auto;
+}
+
+th {
+   text-align: center;
+   opacity: 0.7;
+   width: 200px;
+   padding: 24px 0;
+}
+
+td {
+   padding: 18px 15px;
+   width: 750px;
 }
