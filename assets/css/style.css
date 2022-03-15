@@ -11,9 +11,5 @@
 
 body {
    width: 100%;
-}
-
-.wrapper {
-   position: relative;
-   height: 530vh;
+   height: 660vh;
 }
