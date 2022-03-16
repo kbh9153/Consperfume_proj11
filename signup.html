@@ -71,6 +71,7 @@
                   <p class="signup-required"><span class="signup-required__icon">*</span>필수입력사항</p>
                   <table class="signup-basic">
                      <tr>
+                        <!-- todo : 입력 text => font-size, font-family 수정 -->
                         <th>아이디<span class="signup-required__icon">*</span></th>
                         <td>
                            <!-- todo : 영문 + 숫자만 입력 기능 구현 -->
@@ -104,7 +105,7 @@
                         <td>
                            <input type="text" required>
                            <a href="#">우편번호</a>
-                           <input type="text">
+                           <input type="text" readonly>
                            <span>기본주소</span>
                            <input type="text">
                            <span>나머지주소 (선택입력가능)</span>
@@ -186,7 +187,35 @@
                         </td>
                      </tr>
                   </table>
+
+                  <h3 class="signup-addinfo">추가정보</h3>
+                    <table class="signup-add">
+                     <tr class="signup-add-sex__tr">
+                        <th class="signup-add-sex__th">성별<span class="signup-required__icon">*</span></th>
+                        <td class="signup-add-sex__td">
+                           <div>
+                              <input type="radio" id="signup-man" name="sex" value="man">
+                              <label for="signup-gender__man">남자</label>
+                           </div>
+                           <div>
+                              <input type="radio" id="signup-woman" name="sex" value="woman">
+                              <label for="signup-gender__woman">여자</label>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr class="signup-add-pass__tr">
+                        <th class="signup-add-pass__th">개인통관고유부호(선택)</th>
+                        <td class="signup-add-pass__td">
+                           <input type="text">
+                        </td>
+                     </tr>
+                  </table>
+
+                  <h3 class="signup-agree">전체 동의</h3>
+
                   <input class="signup-submit" type="submit" value="회원가입">
+
+                  
                </form>
             </section>
          </main>

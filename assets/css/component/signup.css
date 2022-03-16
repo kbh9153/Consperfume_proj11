@@ -15,24 +15,39 @@
    padding: 100px 0 50px 0;
 }
 
-.signup-kind__td {
+.signup-kind__td,
+.signup-add-sex__td,
+.signup-add-pass__td {
    display: flex;
    align-items: center;
 }
 
-#private-member {
+#private-member,
+#signup-man,
+#signup-woman {
    margin-right: 7px;
 }
 
 .signup-kind__th {
-   padding: 25px 0 20px 0;
+   padding: 20px 0 15px 0;
 }
 
-.signup-basicinfo {
+.signup-add-sex__th,
+.signup-add-pass__th {
+   padding: 15px 0 10px 0;
+}
+
+.signup-basicinfo,
+.signup-addinfo,
+.signup-agree {
    font-family: "Noto Sans KR", sans-serif;
    font-size: 20px;
    padding: 50px 0 10px 0;
    text-align: start;
+}
+
+.signup-addinfo {
+   padding-bottom: 27px;
 }
 
 .signup-required {
@@ -55,4 +70,11 @@
    border: none;
    border-radius: 5px;
    margin-top: 30px;
+}
+
+.signup-add-pass__td input {
+   border: 1px solid rgba(0, 0, 0, 0.1);
+   border-radius: 5px;
+   height: 35px;
+   width: 500px;
 }
