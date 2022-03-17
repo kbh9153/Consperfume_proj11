@@ -3,6 +3,11 @@
 }
 
 .signup-wrapper {
+   height: 340vh;
+   position: relative;
+}
+
+.signup-main-wrapper {
    margin: 0 auto;
    max-width: 950px;
    width: 100%;
@@ -46,7 +51,8 @@
    text-align: start;
 }
 
-.signup-addinfo {
+.signup-addinfo,
+.signup-agree {
    padding-bottom: 27px;
 }
 
@@ -60,16 +66,20 @@
 }
 
 .signup-submit {
+   text-align: center;
+   margin-top: 35px;
+}
+
+.signup-submit input {
    height: 50px;
    width: 180px;
-   font-size: 13px;
-   color: white;
-   font-weight: 400;
    background-color: #222222;
-   font-family: "Noto Sans KR", sans-serif;
+   color: white;
    border: none;
    border-radius: 5px;
-   margin-top: 30px;
+   font-size: 13px;
+   font-weight: 400;
+   font-family: "Noto Sans KR", sans-serif;
 }
 
 .signup-add-pass__td input {
@@ -77,4 +87,84 @@
    border-radius: 5px;
    height: 35px;
    width: 500px;
+}
+
+/* signup-agree */
+
+.signup-agree-all {
+   display: flex;
+   align-items: center;
+   padding: 28px 40px;
+   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.signup-agree-use,
+.signup-agree-person,
+.signup-agree-shopping {
+   border: 1px solid rgba(0, 0, 0, 0.1);
+   padding: 35px 40px;
+   border-collapse: collapse;
+   margin-top: -1px;
+}
+
+.signup-agree-use__title,
+.signup-agree-person__title,
+.signup-agree-shopping__title {
+   font-family: "Noto Sans KR", sans-serif;
+   font-size: 15px;
+   margin-bottom: 12px;
+}
+
+#signup-agree-all__checkbox {
+   width: 20px;
+   height: 20px;
+   margin-right: 12px;
+   cursor: pointer;
+}
+
+.signup-agree-all label {
+   font-family: "Noto Sans KR", sans-serif;
+   font-weight: 400;
+   font-size: 15px;
+   padding-bottom: 1px;
+}
+
+.signup-agree-use__centents,
+.signup-agree-person__centents,
+.signup-agree-shopping__centents {
+   width: 100%;
+   height: 200px;
+   overflow: auto;
+   border: 1px solid rgba(0, 0, 0, 0.1);
+   margin-bottom: 18px;
+}
+
+.signup-agree-use__centents pre,
+.signup-agree-person__centents pre,
+.signup-agree-shopping__centents pre {
+   font-size: 12px;
+   white-space: pre-wrap;
+   line-height: 1.7;
+   opacity: 0.7;
+   padding: 20px 23px;
+}
+
+.signup-agree-shopping__centents pre {
+   font-size: 14px;
+}
+
+.signup-agree-bot {
+   font-size: 13px;
+   font-family: "Noto Sans KR", sans-serif;
+   font-weight: 200;
+   display: flex;
+   align-items: center;
+}
+
+.signup-agree-bot span {
+   margin-right: 10px;
+}
+
+.signup-agree-bot input {
+   margin-right: 7px;
 }

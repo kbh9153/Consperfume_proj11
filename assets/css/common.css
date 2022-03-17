@@ -3,9 +3,10 @@
    margin: 0 auto;
 }
 
-.wrapper {
+.index-wrapper {
    position: relative;
    height: 100%;
+   height: 610vh;
 }
 
 /* proudct_card */
