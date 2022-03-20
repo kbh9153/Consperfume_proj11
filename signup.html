@@ -56,10 +56,12 @@
          <main>
             <section class="signup max-width">
                <form class="signup-main-wrapper">
-                  <h2 class="signup-title">회원 가입</h2>
+                  <h2 class="signup-title">회원가입</h2>
                   <table class="signup-kind">
                      <tr class="signup-kind__tr">
-                        <th class="signup-kind__th">회원구분<span class="signup-required__icon">*</span></th>
+                        <th class="signup-kind__th">
+                           <span class="signup-required__title">회원구분</span>
+                           <span class="signup-required__icon">*</span></th>
                         <td class="signup-kind__td">
                            <input type="radio" id="private-member">
                            <label for="private-member">개인회원</label>
@@ -68,19 +70,25 @@
                   </table>
 
                   <h3 class="signup-basicinfo">기본정보</h3>
-                  <p class="signup-required"><span class="signup-required__icon">*</span>필수입력사항</p>
+                  <p class="signup-required">
+                     <span class="signup-required__icon">*</span>필수입력사항</p>
                   <table class="signup-basic">
-                     <tr>
+                     <tr class="signup-input-id">
                         <!-- todo : 입력 text => font-size, font-family 수정 -->
-                        <th>아이디<span class="signup-required__icon">*</span></th>
+                        <th>
+                           <span class="signup-required__title">아이디</span>
+                           <span class="signup-required__icon">*</span>
+                        </th>
                         <td>
                            <!-- todo : 영문 + 숫자만 입력 기능 구현 -->
                            <input type="text" minlength="4" maxlength="16" required>
                            <span>(영문소문자/숫자, 4 ~ 16자)</span>
                         </td>
                      </tr>
-                     <tr>
-                        <th>비밀번호<span class="signup-required__icon">*</span></th>
+                     <tr class="signup-input-pw">
+                        <th>
+                           <span class="signup-required__title">비밀번호</span>
+                           <span class="signup-required__icon">*</span></th>
                         <td>
                            <!-- todo : 영문 대소문자/숫자/특수문자 조합 기능 구현 -->
                            <!-- todo : input:hover => 비밀번호 작성 조건 알림창 구현 -->
@@ -88,35 +96,49 @@
                            <span>(영문 대소문자/숫자/특수문자 중 2가지 이상 조합, 8 ~ 16자)</span>
                         </td>
                      </tr>
-                     <tr>
-                        <th>비밀번호 확인<span class="signup-required__icon">*</span></th>
+                     <tr class="signup-input-pwcheck">
+                        <th>
+                           <span class="signup-required__title">비밀번호 확인</span>
+                           <span class="signup-required__icon">*</span></th>
                         <td>
                            <!-- todo : 비밀번호 확인 기능 구현 -->
                            <input type="password" minlength="8" maxlength="16" required>
                         </td>
                      </tr>
-                     <tr>
-                        <th>이름<span class="signup-required__icon">*</span></th>
+                     <tr class="signup-input-name">
+                        <th>
+                           <span class="signup-required__title">이름</span>
+                           <span class="signup-required__icon">*</span></th>
                         <td>
                            <input type="text" required>
                         </td>
                      </tr>
-                     <tr>
-                        <th>주소<span class="signup-required__icon">*</span></th>
+                     <tr class="signup-input-address">
+                        <th>
+                           <span class="signup-required__title">주소</span>
+                           <span class="signup-required__icon">*</span></th>
                         <td>
-                           <input type="text" required>
-                           <a href="#">우편번호</a>
-                           <input type="text" readonly>
-                           <span>기본주소</span>
-                           <input type="text">
-                           <span>나머지주소 (선택입력가능)</span>
+                           <div>
+                              <input type="text" required readonly>
+                              <a href="#">우편번호</a>
+                           </div>
+                           <div>
+                              <input type="text"  required readonly>
+                              <span>기본주소</span>
+                           </div>
+                           <div>
+                              <input type="text">
+                              <span>나머지주소 (선택입력가능)</span>
+                           </div>   
                         </td>
                      </tr>
-                     <tr>
-                        <th>일반전화</th>
+                     <tr class="signup-input-tel">
+                        <th>
+                           일반전화
+                        </th>
                         <td>
-                           <div class="dropdown">
-                              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                           <div class="dropdown signup-num-dropdown">
+                              <a class="btn btn-secondary dropdown-toggle signup-num-btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                                  02
                               </a>
                               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -152,18 +174,20 @@
                                  <li><a class="dropdown-item" href="#">018</a></li>
                                  <li><a class="dropdown-item" href="#">019</a></li>
                               </ul>
-                              -
-                              <input type="text">
-                              -
-                              <input type="text">
+                              <span>-</span>
+                              <input class="signup-input-num" type="text">
+                              <span>-</span>
+                              <input class="signup-input-num" type="text">
                            </div>
                         </td>
                      </tr>
-                     <tr>
-                        <th>휴대전화<span class="signup-required__icon">*</span></th>
+                     <tr class="signup-input-mobile">
+                        <th>
+                           <span class="signup-required__title">휴대전화</span>
+                           <span class="signup-required__icon">*</span></th>
                         <td>
-                           <div class="dropdown">
-                              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                           <div class="dropdown signup-num-dropdown">
+                              <a class="btn btn-secondary dropdown-toggle signup-num-btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                                  010
                               </a>
                               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -174,14 +198,14 @@
                                  <li><a class="dropdown-item" href="#">018</a></li>
                                  <li><a class="dropdown-item" href="#">019</a></li>
                               </ul>
-                              -
-                              <input type="text" required>
-                              -
-                              <input type="text" required>
+                              <span>-</span>
+                              <input class="signup-input-num" type="text" required>
+                              <span>-</span>
+                              <input class="signup-input-num" type="text" required>
                            </div>
                         </td>
                      </tr>
-                     <tr>
+                     <tr class="signup-input-email">
                         <th>이메일</th>
                         <td>
                            <input type="email" required>
@@ -192,15 +216,17 @@
                   <h3 class="signup-addinfo">추가정보</h3>
                     <table class="signup-add">
                      <tr class="signup-add-sex__tr">
-                        <th class="signup-add-sex__th">성별<span class="signup-required__icon">*</span></th>
+                        <th class="signup-add-sex__th">
+                           <span class="signup-required__title">성별</span>
+                           <span class="signup-required__icon">*</span></th>
                         <td class="signup-add-sex__td">
                            <div>
                               <input type="radio" id="signup-man" name="sex" value="man">
-                              <label for="signup-gender__man">남자</label>
+                              <label for="signup-gender__man">남성</label>
                            </div>
                            <div>
                               <input type="radio" id="signup-woman" name="sex" value="woman">
-                              <label for="signup-gender__woman">여자</label>
+                              <label for="signup-gender__woman">여성</label>
                            </div>
                         </td>
                      </tr>
@@ -632,7 +658,7 @@ o 로그 기록
                      </div>
 
                      <p class="signup-agree-bot">
-                        <span>쇼핑정보 수신을 동의하십니까??</span>
+                        <span>쇼핑정보 수신을 동의하십니까?</span>
                         <input type="checkbox" id="signup-agree-checkbox__bot">
                         <label for="signup-agree-checkbox__bot" >동의함</label>
                      </p>

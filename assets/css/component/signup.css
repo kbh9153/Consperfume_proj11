@@ -3,7 +3,7 @@
 }
 
 .signup-wrapper {
-   height: 340vh;
+   height: 370vh;
    position: relative;
 }
 
@@ -27,14 +27,16 @@
    align-items: center;
 }
 
-#private-member,
-#signup-man,
-#signup-woman {
-   margin-right: 7px;
+.signup-kind__td label {
+   margin-left: 7px;
 }
 
-.signup-kind__th {
-   padding: 20px 0 15px 0;
+#signup-woman {
+   margin-left: 5px;
+}
+
+.signup-add-sex__td div:first-child {
+   margin-right: 10px;
 }
 
 .signup-add-sex__th,
@@ -51,6 +53,10 @@
    text-align: start;
 }
 
+.signup-basicinfo {
+   margin-bottom: 7px;
+}
+
 .signup-addinfo,
 .signup-agree {
    padding-bottom: 27px;
@@ -62,7 +68,13 @@
    opacity: 0.8;
    font-size: 14px;
    text-align: end;
-   margin: -17px 0 5px 0;
+   margin: -17px 0 12px 0;
+   position: relative;
+}
+
+.signup-required .signup-required__icon {
+   position: absolute;
+   right: 77px;
 }
 
 .signup-submit {
@@ -103,7 +115,6 @@
 .signup-agree-shopping {
    border: 1px solid rgba(0, 0, 0, 0.1);
    padding: 35px 40px;
-   border-collapse: collapse;
    margin-top: -1px;
 }
 
@@ -139,6 +150,10 @@
    margin-bottom: 18px;
 }
 
+.signup-agree-use__centents::-webkit-scrollbar-thumb {
+   background-color: blue;
+}
+
 .signup-agree-use__centents pre,
 .signup-agree-person__centents pre,
 .signup-agree-shopping__centents pre {
@@ -167,4 +182,57 @@
 
 .signup-agree-bot input {
    margin-right: 7px;
+}
+
+.signup-input-address a {
+   font-size: 13px;
+   font-weight: 400;
+   padding: 6px 8px;
+   border: 1px solid rgba(0, 0, 0, 0.2);
+   border-radius: 3px;
+}
+
+.signup-input-address div:nth-child(2) {
+   margin: 5px 0;
+}
+
+.signup-input-address div:first-child input {
+   width: 70px;
+}
+
+.signup-input-address div:nth-child(2) input,
+.signup-input-address div:last-child input {
+   width: 300px;
+}
+
+.signup-input-num {
+   width: 70px;
+}
+
+.signup-num-btn {
+   background-color: rgba(0, 0, 0, 0);
+   color: black;
+   font-family: "Noto Sans KR", sans-serif;
+   font-size: 14px;
+   font-weight: 300;
+   border: 1px solid rgba(0, 0, 0, 0.1);
+   border-radius: 5px;
+}
+
+.signup-num-dropdown {
+   display: flex;
+   align-items: center;
+}
+
+.signup-num-dropdown span {
+   margin: 0 5px;
+}
+
+.signup-add-sex__td input {
+   vertical-align: middle;
+}
+
+.signup-add-sex__td label {
+   margin-left: 3px;
+   vertical-align: middle;
 }
