@@ -8,6 +8,7 @@
 @import "./component/product_card.css";
 @import "./component/footer.css";
 @import "./component/signup.css";
+@import "./component/buy.css";
 
 body {
    width: 100%;

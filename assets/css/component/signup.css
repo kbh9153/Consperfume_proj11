@@ -200,32 +200,34 @@
    width: 70px;
 }
 
+.signup-input-num {
+   width: 75px;
+}
+
 .signup-input-address div:nth-child(2) input,
 .signup-input-address div:last-child input {
    width: 300px;
 }
 
-.signup-input-num {
-   width: 70px;
-}
-
-.signup-num-btn {
-   background-color: rgba(0, 0, 0, 0);
-   color: black;
-   font-family: "Noto Sans KR", sans-serif;
-   font-size: 14px;
-   font-weight: 300;
-   border: 1px solid rgba(0, 0, 0, 0.1);
-   border-radius: 5px;
-}
-
-.signup-num-dropdown {
+.signup-input-tel td,
+.signup-input-mobile td {
    display: flex;
    align-items: center;
 }
 
-.signup-num-dropdown span {
-   margin: 0 5px;
+.signup-input-tel td span,
+.signup-input-mobile td span {
+   margin: 0 3px;
+}
+
+.signup-num-select {
+   width: 75px;
+   border: 1px solid rgba(0, 0, 0, 0.1);
+   border-radius: 5px;
+   height: 35px;
+   font-family: "Noto Sans KR", sans-serif;
+   font-size: 13px;
+   font-weight: 300;
 }
 
 .signup-add-sex__td input {
