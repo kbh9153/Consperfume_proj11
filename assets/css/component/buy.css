@@ -1,4 +1,38 @@
 .product-buy {
-   margin-top: 215px;
+   margin-top: 280px;
+   max-width: 1200px;
+}
+
+/* 제품 대표이미지 */
+
+.buy-img-info {
    display: flex;
+}
+
+.buy-img__screen {
+   flex-basis: 50%;
+   padding-right: 60px;
+}
+
+.buy-img__big {
+   max-width: 100%;
+   border: 1px solid rgba(0, 0, 0, 0.1);
+   margin-bottom: 3px;
+}
+
+.buy-img__small {
+   height: 85px;
+   width: auto;
+   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.buy-img__lends {
+   display: block;
+   width: 15px;
+}
+
+/* 제품 구매(구매, 가격, 배송비 등) */
+
+.buy-info__screen {
+   flex-basis: 50%;
 }

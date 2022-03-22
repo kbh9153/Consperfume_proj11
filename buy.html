@@ -55,98 +55,101 @@
 
          <main>
             <section class="product-buy max-width">
-               <div class="buy-img__screen">
-                  <!-- todo : JS 돋보기 기능 구현 -->
-                  <img src="./assets/img/buy_imgs/jomalone.jpg" alt="제품 대표 이미지" class="buy-img__big">
-                  <img src="#" alt="제품s 부가 이미지" class="buy-img__small">
-                  <a href="#" class="buy-img__lens"></a>
-               </div>
-               <div class="buy-info__screen">
-                  <table class="buy-info-order">
-                     <tbody>
-                        <tr class="buy-info-title">
-                           <td class="buy-info-name">조말론 포피 앤 바알리 코롱 30ml</td>
-                        </tr>
-                        <tr class="buy-info-cover">
-                           <td class="buy-info-cover__price">
-                              99,000원
-                           </td>
-                        </tr>
-                        <tr class="buy-info-discount">
-                           <th class="buy-info-discount__head">판매가</th>
-                           <td class="buy-info-discount__data">
-                              79,800원
-                           </td>
-                        </tr>
-                        <tr class="buy-info-save">
-                           <th class="buy-info-save__head">적립금</th>
-                           <td class="buy-info-save__data">399원 (0.50%)</td>
-                        </tr>
-                        <tr class="buy-info-delivery">
-                           <th class="buy-info-delivery__head">배송비</th>
-                           <td class="buy-info-delivery__data">
-                              2,500원 <span class="buy-info-delivery__free">(97,000원 이상 구매 시 무료)</span>
-                           </td>
-                        </tr>
-                        <tr class="buy-info-capacity">
-                           <th class="buy-info-capacity__head">
-                              용량
-                           </th>
-                           <td class="buy-info-capacity__data">
+               <div class="buy-img-info">
+                  <div class="buy-img__screen">
+                     <!-- todo : JS 돋보기 기능 구현 -->
+                     <img src="./assets/img/buy_imgs/jomalone.jpg" alt="제품 대표 이미지" class="buy-img__big">
+                     <img src="./assets/img/buy_imgs/jomalone.jpg" alt="제품s 부가 이미지" class="buy-img__small">
+                     <img src="./assets/img/buy_imgs/jomalone_bag.jpg" alt="제품s 부가 이미지" class="buy-img__small">
+                     <a href="#" class="buy-img__lens"><i class="fa-solid fa-magnifying-glass"></i>확대보기</a>
+                  </div>
+                  <div class="buy-info__screen">
+                     <table class="buy-info-order">
+                        <tbody>
+                           <tr class="buy-info-title">
+                              <td class="buy-info-name">조말론 포피 앤 바알리 코롱 30ml</td>
+                           </tr>
+                           <tr class="buy-info-cover">
+                              <td class="buy-info-cover__price">
+                                 99,000원
+                              </td>
+                           </tr>
+                           <tr class="buy-info-discount">
+                              <th class="buy-info-discount__head">판매가</th>
+                              <td class="buy-info-discount__data">
+                                 79,800원
+                              </td>
+                           </tr>
+                           <tr class="buy-info-save">
+                              <th class="buy-info-save__head">적립금</th>
+                              <td class="buy-info-save__data">399원 (0.50%)</td>
+                           </tr>
+                           <tr class="buy-info-delivery">
+                              <th class="buy-info-delivery__head">배송비</th>
+                              <td class="buy-info-delivery__data">
+                                 2,500원 <span class="buy-info-delivery__free">(97,000원 이상 구매 시 무료)</span>
+                              </td>
+                           </tr>
+                           <tr class="buy-info-capacity">
+                              <th class="buy-info-capacity__head">
+                                 용량
+                              </th>
+                              <td class="buy-info-capacity__data">
+                                 <select class="form-select" aria-label="Default select example">
+                                    <option selected>- [필수] 옵션을 선택해 주세요 -</option>
+                                    <option value="1">30ml</option>
+                                 </select>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <p class="min-order">(최소 주문수량 1개 이상)</p>
+
+                     <div class="buy-add">
+                        <div class="buy-add-title">
+                           <h3>추가구성상품</h3>
+                           <span>추가로 구매를 원하시면 선택하세요.</span>
+                        </div>
+                        <ul class="buy-add-list">
+                           <li class="buy-add-bag">
+                              <img src="#" alt="추가상품 쇼핑백 이미지" class="buy-add-bag__img">
+                              <p class="buy-add-bag__title">(선택) 쇼핑백</p>
+                              <p class="buy-add-bag__price">2,500원</p>
+                              <span class="buy-add-bag__subtitle">쇼핑백</span>
                               <select class="form-select" aria-label="Default select example">
-                                 <option selected>- [필수] 옵션을 선택해 주세요 -</option>
-                                 <option value="1">30ml</option>
-                              </select>
-                           </td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  <p class="min-order">(최소 주문수량 1개 이상)</p>
+                                    <option selected>- [필수] 옵션을 선택해 주세요 -</option>
+                                    <option value="1">조말론 쇼핑백</option>
+                                 </select>
+                           </li>
 
-                  <div class="buy-add">
-                     <div class="buy-add-title">
-                        <h3>추가구성상품</h3>
-                        <span>추가로 구매를 원하시면 선택하세요.</span>
+                           <li class="buy-add-bottle">
+                              <img src="#" alt="추가상품 공병 이미지" class="buy-add-bottle__img">
+                              <p class="buy-add-bottle__title">(선택) 분사형 공병</p>
+                              <p class="buy-add-bottle__price">2,500원</p>
+                              <span class="buy-add-bottle__subtitle">분사형 공병</span>
+                              <select class="form-select" aria-label="Default select example">
+                                    <option selected>- [필수] 옵션을 선택해 주세요 -</option>
+                                    <option value="1">black</option>
+                                    <option value="2">silver</option>
+                                    <option value="3">rose</option>
+                                 </select>
+                           </li>
+                        </ul>
+                        <p class="buy-add-guide">
+                           <div>!</div>
+                           위 옵션선택 박스를 선택하시면 아래에 상품이 추가됩니다.
+                        </p>
                      </div>
-                     <ul class="buy-add-list">
-                        <li class="buy-add-bag">
-                           <img src="#" alt="추가상품 쇼핑백 이미지" class="buy-add-bag__img">
-                           <p class="buy-add-bag__title">(선택) 쇼핑백</p>
-                           <p class="buy-add-bag__price">2,500원</p>
-                           <span class="buy-add-bag__subtitle">쇼핑백</span>
-                           <select class="form-select" aria-label="Default select example">
-                                 <option selected>- [필수] 옵션을 선택해 주세요 -</option>
-                                 <option value="1">조말론 쇼핑백</option>
-                              </select>
-                        </li>
 
-                        <li class="buy-add-bottle">
-                           <img src="#" alt="추가상품 공병 이미지" class="buy-add-bottle__img">
-                           <p class="buy-add-bottle__title">(선택) 분사형 공병</p>
-                           <p class="buy-add-bottle__price">2,500원</p>
-                           <span class="buy-add-bottle__subtitle">분사형 공병</span>
-                           <select class="form-select" aria-label="Default select example">
-                                 <option selected>- [필수] 옵션을 선택해 주세요 -</option>
-                                 <option value="1">black</option>
-                                 <option value="2">silver</option>
-                                 <option value="3">rose</option>
-                              </select>
-                        </li>
-                     </ul>
-                     <p class="buy-add-guide">
-                        <div>!</div>
-                        위 옵션선택 박스를 선택하시면 아래에 상품이 추가됩니다.
-                     </p>
+                     <div class="buy-total">
+                        <span>총 상품금액(수량)</span>
+                        <span>0원</span>
+                        <span>(0개)</span>
+                     </div>
+                     <div class="buy-btn">구매하기</div>
+                     <div class="cart-btn">장바구니</div>
+                     <div class="like-btn">관심상품</div>
                   </div>
-
-                  <div class="buy-total">
-                     <span>총 상품금액(수량)</span>
-                     <span>0원</span>
-                     <span>(0개)</span>
-                  </div>
-                  <div class="buy-btn">구매하기</div>
-                  <div class="cart-btn">장바구니</div>
-                  <div class="like-btn">관심상품</div>
                </div>
             </section>
          </main>
