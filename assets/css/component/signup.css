@@ -1,3 +1,72 @@
+.signup-wrapper table {
+   font-family: "Noto Sans KR", sans-serif;
+   font-size: 15px;
+   margin: 0 auto;
+}
+
+.signup-wrapper input:focus {
+   outline: none;
+}
+
+.signup-wrapper tr {
+   border-top: var(--border);
+   border-bottom: var(--border);
+}
+
+.signup-wrapper th {
+   text-align: center;
+   opacity: 0.6;
+   width: 200px;
+   vertical-align: middle;
+   background-color: rgba(192, 192, 192, 0.2);
+   font-size: 14px;
+}
+
+.signup-wrapper td {
+   padding: 18px 15px;
+   width: 750px;
+}
+
+.signup-wrapper td span {
+   font-size: 14px;
+   font-weight: 300;
+}
+
+.signup-wrapper input {
+   font-family: "Noto Sans KR", sans-serif;
+   font-size: 13px;
+   font-weight: 300;
+   padding-left: 7px;
+}
+
+.signup-wrapper label {
+   font-size: 14px;
+   font-weight: 300;
+}
+
+.signup-required__icon {
+   color: blue;
+   font-size: 23px;
+   font-weight: 700;
+   margin: 0 5px;
+}
+
+.signup-required__title {
+   position: relative;
+}
+
+th .signup-required__icon {
+   position: absolute;
+}
+
+.signup-basic input {
+   border: var(--border);
+   border-radius: 5px;
+   height: 35px;
+}
+
+/* 요소별 */
+
 .signup {
    margin-top: 215px;
 }
@@ -95,7 +164,7 @@
 }
 
 .signup-add-pass__td input {
-   border: 1px solid rgba(0, 0, 0, 0.1);
+   border: var(--border);
    border-radius: 5px;
    height: 35px;
    width: 500px;
@@ -107,15 +176,15 @@
    display: flex;
    align-items: center;
    padding: 28px 40px;
-   border: 1px solid rgba(0, 0, 0, 0.1);
+   border: var(--border);
 }
 
 .signup-agree-use,
 .signup-agree-person,
 .signup-agree-shopping {
-   border: 1px solid rgba(0, 0, 0, 0.1);
+   border: var(--border);
+   border-top: none;
    padding: 35px 40px;
-   margin-top: -1px;
 }
 
 .signup-agree-use__title,
@@ -146,7 +215,7 @@
    width: 100%;
    height: 200px;
    overflow: auto;
-   border: 1px solid rgba(0, 0, 0, 0.1);
+   border: var(--border);
    margin-bottom: 18px;
 }
 
@@ -222,7 +291,7 @@
 
 .signup-num-select {
    width: 75px;
-   border: 1px solid rgba(0, 0, 0, 0.1);
+   border: var(--border);
    border-radius: 5px;
    height: 35px;
    font-family: "Noto Sans KR", sans-serif;

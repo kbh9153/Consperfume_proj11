@@ -1,3 +1,29 @@
+.card {
+   border: none;
+}
+
+.card-title {
+   font-family: "Noto Serif KR", serif;
+}
+
+.card-explain {
+   font-family: "Noto Sans KR", sans-serif;
+}
+
+.perfume-card__collection {
+   display: flex;
+   justify-content: center;
+}
+
+.perfume-card__body {
+   text-align: center;
+}
+
+.perfume-card img,
+.perfume-card .new-card-img {
+   margin-bottom: 15px;
+}
+
 /* 이 달의 향수 section */
 
 .month-perfume .perfume-card:nth-child(2) {

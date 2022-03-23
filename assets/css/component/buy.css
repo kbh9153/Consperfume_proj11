@@ -3,10 +3,21 @@
    max-width: 1200px;
 }
 
+.buy-info__select {
+   border: var(--border);
+   border-radius: 5px;
+   height: 32px;
+   font-family: "Noto Sans KR", sans-serif;
+   font-size: 13px;
+   font-weight: 300;
+}
+
 /* 제품 대표이미지 */
 
 .buy-img-info {
    display: flex;
+   font-family: "Noto Sans KR", sans-serif;
+   font-weight: 300;
 }
 
 .buy-img__screen {
@@ -16,23 +27,218 @@
 
 .buy-img__big {
    max-width: 100%;
-   border: 1px solid rgba(0, 0, 0, 0.1);
+   border: var(--border);
    margin-bottom: 3px;
 }
 
 .buy-img__small {
-   height: 85px;
+   height: 90px;
    width: auto;
-   border: 1px solid rgba(0, 0, 0, 0.1);
+   border: var(--border);
 }
 
-.buy-img__lends {
-   display: block;
-   width: 15px;
+.buy-img__lens {
+   display: flex;
+   width: 100%;
+   border: var(--border);
+   height: 45px;
+   justify-content: center;
+   align-items: center;
+   font-size: 14px;
+   margin-top: 3px;
+}
+
+.buy-img__lens i {
+   margin-right: 5px;
 }
 
 /* 제품 구매(구매, 가격, 배송비 등) */
 
 .buy-info__screen {
    flex-basis: 50%;
+   display: block;
+}
+
+.buy-info-name {
+   font-size: 21px;
+   font-family: "Noto Serif KR", serif;
+}
+
+.buy-info-cover__price {
+   font-size: 13px;
+   text-decoration: line-through;
+   padding: 15px 0 20px 0;
+}
+
+.buy-info-body tr {
+   display: block;
+   padding-top: 20px;
+}
+
+.buy-info-body th {
+   width: 115px;
+}
+
+.buy-info-body td {
+   width: 485px;
+}
+
+.buy-info-discount {
+   border-top: var(--border);
+}
+
+.buy-info__screen th {
+   font-size: 14px;
+}
+
+.buy-info-discount__data {
+   font-size: 18px;
+   color: #6b3e00;
+   font-weight: 500;
+}
+
+.buy-info-delivery {
+   padding-bottom: 20px;
+}
+
+.buy-info-save__data,
+.buy-info-delivery__data {
+   font-size: 14px;
+}
+
+.buy-info-capacity {
+   border-top: var(--border);
+   border-bottom: var(--border);
+   padding-bottom: 20px;
+}
+
+.min-order {
+   font-size: 13px;
+   opacity: 0.8;
+   padding: 15px 0;
+}
+
+/* 추가구성상품 */
+
+.buy-add-list {
+   border: var(--border);
+   height: 323px;
+   overflow: auto;
+}
+
+.buy-add-title {
+   border: var(--border);
+   border-bottom: none;
+   display: flex;
+   align-items: flex-end;
+   padding: 15px 20px;
+}
+
+.buy-add-title h3 {
+   font-size: 15px;
+   font-weight: 400;
+   margin-right: 10px;
+}
+
+.buy-add-title span {
+   font-size: 13px;
+}
+
+.buy-add-bag,
+.buy-add-bottle,
+.buy-add-auto {
+   display: flex;
+   padding: 20px;
+   border-bottom: var(--border);
+}
+
+.buy-add-bag img,
+.buy-add-bottle img,
+.buy-add-auto img {
+   height: 90px;
+   width: 90px;
+}
+
+.buy-add-bag__title,
+.buy-add-bottle__title,
+.buy-add-auto__title {
+   font-size: 14px;
+   font-weight: 400;
+}
+
+.buy-add-bag__price,
+.buy-add-bottle__price,
+.buy-add-auto__price {
+   font-size: 13px;
+   padding: 10px 0;
+}
+
+.buy-add-bag__subtitle,
+.buy-add-bottle__subtitle,
+.buy-add-auto__subtitle {
+   display: inline-block;
+   font-size: 13px;
+   font-weight: 500;
+   padding: 7px 0 9px 0;
+}
+
+.buy-add-bag__option,
+.buy-add-bottle__option,
+.buy-add-auto__option {
+   padding: 0 20px;
+   width: 100%;
+}
+
+.buy-add-guide {
+   display: flex;
+   color: red;
+   font-size: 13px;
+   align-items: center;
+   margin-top: 23px;
+}
+
+.buy-add-guide div {
+   border: 1px solid rgba(0, 0, 0, 0.2);
+   border-radius: 5px;
+   font-weight: 500;
+   padding: 1px 6px;
+   margin-right: 7px;
+}
+
+.buy-total {
+   text-align: end;
+   padding: 35px 0 25px 0;
+   font-weight: 300;
+   font-size: 15px;
+}
+
+.buy-total span:nth-child(2) {
+   font-size: 23px;
+   font-weight: 600;
+   margin: 0 3px 0 10px;
+}
+
+.buy-total-btn {
+   display: flex;
+   justify-content: space-between;
+   padding-bottom: 25px;
+   border-bottom: 2.5px solid black;
+}
+
+.buy-total-btn div {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 197px;
+   height: 50px;
+   border: 1px solid rgba(0, 0, 0, 0.2);
+   border-radius: 5px;
+   font-size: 13px;
+   font-weight: 500;
+}
+
+div.buy-btn {
+   color: white;
+   background-color: #8a7f73;
+   border: none;
 }
