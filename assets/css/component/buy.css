@@ -1,11 +1,11 @@
-.signup-wrapper {
+.buy-wrapper {
    position: relative;
    height: 100%;
-   height: 820vh;
+   height: 950vh;
 }
 
 .product-buy {
-   margin-top: 280px;
+   margin-top: 150px;
    max-width: 1200px;
 }
 
@@ -261,25 +261,25 @@ div.buy-btn {
    font-family: "Noto Sans KR", sans-serif;
 }
 
-.detail-header {
+.detail-info-list {
    display: flex;
    justify-content: center;
    margin-top: 100px;
    align-items: center;
 }
 
-.detail-header li {
+.ddetail-info-list li {
    font-size: 15px;
    display: flex;
    opacity: 0.7;
 }
 
-.detail-header li a {
+.detail-info-list li a {
    display: flex;
    align-items: center;
 }
 
-.detail-header li div {
+.detail-info-list li div {
    background-color: rgba(0, 0, 0, 0.7);
    padding: 4px 7px;
    color: white;
@@ -288,14 +288,95 @@ div.buy-btn {
    margin-left: 7px;
 }
 
-.detail-header .divider {
+.detail-info-list .divider {
    margin: 0 25px;
    background-color: rgba(0, 0, 0, 0.3);
    width: 1px;
    height: 14px;
 }
 
-.detail-body img {
+.detail-info-contents img {
    display: block;
    margin: 0 auto;
+}
+
+.detail-hr {
+   margin: 100px 0;
+   opacity: 0.1;
+}
+
+.detail-add-info {
+   width: 875px;
+   margin: 0 auto;
+   border-bottom: var(--border);
+}
+
+.detail-add-info li h3 {
+   font-weight: 500;
+   opacity: 0.6;
+   padding-bottom: 25px;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.detail-add-info li pre {
+   font-size: 13px;
+   font-weight: 300;
+   overflow: visible;
+   padding: 25px 0 50px 0;
+   line-height: 1;
+}
+
+.detail-add-info li pre span {
+   font-size: 14px;
+   font-weight: 400;
+}
+
+/* 사용후기 */
+
+.detail-info-note {
+   margin-top: 50px;
+}
+
+.info-note-title {
+   text-align: center;
+   font-family: "Noto Serif KR", serif;
+   font-size: 24px;
+   padding-bottom: 35px;
+}
+
+.info-note-review {
+   font-size: 13px;
+   margin-bottom: 10px;
+}
+
+.info-note-review span:first-child {
+   font-weight: 500;
+}
+
+.info-note-review span:nth-child(2) {
+   margin: 5px;
+}
+
+.info-note-review span:last-child {
+   opacity: 0.7;
+}
+
+.note-form-editor {
+   width: 100%;
+   height: 150px;
+   border: var(--border);
+   font-size: 13px;
+   padding: 12px;
+}
+
+.note-form-editor:focus {
+   outline: none;
+}
+
+.info-note-form label {
+   cursor: pointer;
+}
+
+#image-input {
+   display: none;
 }
