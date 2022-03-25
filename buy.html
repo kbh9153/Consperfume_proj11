@@ -38,13 +38,13 @@
                <!-- todo : icon size 조정할 것 -->
                <ul class="nav-bar__icon">
                   <li>
-                     <a href="./signup.html"><img src="./assets/icon/Gender_Neutral_User_icon-icons.com_55902.svg" alt="user" /></a>
+                     <a href="./signup.html"><img src="./assets/icon/user_add_icon_217425.svg" alt="user" /></a>
                   </li>
                   <li>
-                     <a href="#"><img src="./assets/icon/bag_buy_cart_market_shop_shopping_tote_icon_123191.svg" alt="basket" /></a>
+                     <a href="#"><img src="./assets/icon/Gender_Neutral_User_icon-icons.com_55902.svg" alt="basket" /></a>
                   </li>
                   <li>
-                     <a href="#"><img src="./assets/icon/search_magnifier_icon_145939.svg" alt="search" /></a>
+                     <a href="#"><img src="./assets/icon/bag_buy_cart_market_shop_shopping_tote_icon_123191.svg" alt="search" /></a>
                   </li>
                </ul>
             </div>
@@ -256,17 +256,17 @@
 
    - 향수 특성상 포장을 개봉하였거나 훼손 및 사용하여 상품가치가 상실된 경우에는 교환/반품이 불가능합니다.
 
-      (검수 후 상품가치가 상실되어 처리가 불가할 경우 고객님 부담의 추가배송비가 발생됩니다.)
+      (검수 후 상품가치가 상실되어 처리가 불가할 경우 고객님 부담의 추가 배송비가 발생됩니다.)
 
    - 고객님의 사용 또는 일부 소비에 의하여 상품의 가치가 현저히 감소한 경우
 
-      (단, 화장품등의 경우 시용제품을 제공한 경우에 한 합니다.)
+      (단, 화장품 등의 경우 시용 제품을 제공한 경우에 한 합니다.)
 
-   - 시간의 경과에 의하여 재판매가 곤란할 정도로 상품등의 가치가 현저히 감소한 경우
+   - 시간의 경과에 의하여 재판매가 곤란할 정도로 상품 등의 가치가 현저히 감소한 경우
 
-      (자세한 내용은 고객센터 1:1, E-MAIL상담을 이용해 주시기 바랍니다.)
+      (자세한 내용은 고객센터 1:1, E-mail 상담을 이용해 주시기 바랍니다.)
 
-※ 고객님의 마음이 바뀌어 교환/반품을 하실 경우 상품반송 비용은 고객님 부담으로 처리됩니다.
+※ 고객님의 변심으로 인한 교환/반품을 하실 경우 상품반송 비용은 고객님 부담으로 처리됩니다.
 
    ** 도서산간 지역은 별도의 추가금액을 지불하셔야 하는 경우가 있습니다 **
 
@@ -287,7 +287,9 @@
                      </ul>
                   </div>
                </div>
-
+            </section>
+            
+            <section class="product-notion max-width">
                <div class="detail-info-note">
                   <h3 class="info-note-title">
                      상품사용후기
@@ -298,23 +300,118 @@
                      <span>악의적인 비방글은 무통보 삭제될 수 있음을 유의해주시기 바랍니다.</span>
                   </p>
                   <form class="info-note-form">
+                     <!-- todo : 입력 수 제한, 커서 상단 위치 -->
                      <input type="text" class="note-form-editor" oninput="handleOnInput(this, 300)">
-                     <label for="image-input"><i class="fa-solid fa-camera fa-xl"></i> + 사진추가</label>
-                     <input id="image-input" type="file" accept="image/png, image/jpg, image/jpeg" multiple>
                   </form>
 
-                   <select class="form-select form-select-sm " aria-label=".form-select-sm example">
-                     <option selected>- 평점을 선택해주세요 -</option>
-                     <option value="1"><span class="star">★★★★★</span><span class="star-text">아주 좋아요</span></option>
-                     <option value="2"><span class="star">★★★★☆</span><span class="star-text">마음에 들어요</span></option>
-                     <option value="3"><span class="star">★★★☆☆</span><span class="star-text">보통이에요</span></option>
-                     <option value="4"><span class="star">★★☆☆☆</span><span class="star-text">별로에요</span></option>
-                     <option value="5"><span class="star">★☆☆☆☆</span><span class="star-text">추천하지 않아요</span></option>
-                  </select>
+                  <div class="info-note-add">
+                     <form class="info-add-photo">
+                        <label for="image-input"><i class="fa-solid fa-camera fa-xl"></i> + 사진추가</label>
+                        <input id="image-input" type="file" accept="image/png, image/jpg, image/jpeg" multiple>
+                     </form>
 
-                  <button class="review-up-btn"><i class="fa-solid fa-circle-check"></i>리뷰 등록하기</button>
+                     <select class="form-select form-select-sm info-note-select" aria-label=".form-select-sm example">
+                        <!-- todo : 옵션 스타일 변경 -->
+                        <option selected>- 평점을 선택해주세요 -</option>
+                        <option value="1"><span class="star">★★★★★</span><span class="star-text">아주 좋아요</span></option>
+                        <option value="2"><span class="star">★★★★☆</span><span class="star-text">마음에 들어요</span></option>
+                        <option value="3"><span class="star">★★★☆☆</span><span class="star-text">보통이에요</span></option>
+                        <option value="4"><span class="star">★★☆☆☆</span><span class="star-text">별로에요</span></option>
+                        <option value="5"><span class="star">★☆☆☆☆</span><span class="star-text">추천하지 않아요</span></option>
+                     </select>
+
+                     <button class="review-up-btn"><i class="fa-solid fa-circle-check fa-lg"></i>리뷰 등록하기</button>
+                  </div>
+               </div>
+
+               <div class="product-score">
+                  <div class="score-avg">
+                     <p class="avg-box">5.0</p>
+                     <span class="avg-text">( 4 / 4 ) 평점</span>
+                  </div>
+
+                  <div class="product-star">
+                     <div class="star-score">
+                        <span class="star-score-header">5 stars</span>
+                        <div class="star-five-meter"></div>
+                        <span class="avg-count">(4)</span>
+                     </div>
+
+                     <div class="star-score">
+                        <span class="star-score-header">4 stars</span>
+                        <div class="star-score-meter"></div>
+                        <span class="avg-count">(0)</span>
+                     </div>
+
+                     <div class="star-score">
+                        <span class="star-score-header">3 stars</span>
+                        <div class="star-score-meter"></div>
+                        <span class="avg-count">(0)</span>
+                     </div>
+
+                     <div class="star-score">
+                        <span class="star-score-header">2 stars</span>
+                        <div class="star-score-meter"></div>
+                         <span class="avg-count">(0)</span>
+
+                     </div>
+
+                     <div class="star-score">
+                        <span class="star-score-header">1 stars</span>
+                        <div class="star-score-meter"></div>
+                         <span class="avg-count">(0)</span>
+                     </div>
+                  </div>
                </div>
                
+               <div class="review-board">
+                  <ul class="board-list">
+                     <li class="board-list-group">
+                        <div class="group-number">번호</div>
+                        <div class="group-pic">포토</div>
+                        <div class="group-title">제목</div>
+                        <div class="group-author">작성자</div>
+                        <div class="group-avg">평점</div>
+                     </li>
+                     <li class="board-review">
+                        <div class="review-number">4</div>
+                        <div class="review-pic"><i class="fa-solid fa-camera fa-lg"></i></div>
+                        <div class="review-title"><a href="#">봄에 사용하기 어울려요</a></div>
+                        <div class="review-author">seokd****</div>
+                        <div class="review-score">★★★★★</div>
+                     </li>
+                      <li class="board-review">
+                        <div class="review-number">3</div>
+                        <div class="review-pic"><i class="fa-solid fa-camera fa-lg"></i></div>
+                        <div class="review-title"><a href="#">좋아요! 향이 엄청 오래 지속되지는 않아서 중간에 한번씩 뿌려줘야 될 것 같아요</a></div>
+                        <div class="review-author">gid****</div>
+                        <div class="review-score">★★★★★</div>
+                     </li>
+                      <li class="board-review">
+                        <div class="review-number">2</div>
+                        <div class="review-pic"></div>
+                        <div class="review-title"><a href="#">배송이 빨라서 만족합니다. 우디향이 좋네요</a></div>
+                        <div class="review-author">joma****</div>
+                        <div class="review-score">★★★★★</div>
+                     </li>
+                     <li class="board-review">
+                        <div class="review-number">1</div>
+                        <div class="review-pic"><i class="fa-solid fa-camera fa-lg"></i></div>
+                        <div class="review-title"><a href="#">선물용으로 추천받아 구매했어요! 사용해보더니 좋아하네요</a></div>
+                        <div class="review-author">kosm****</div>
+                        <div class="review-score">★★★★★</div>
+                     </li>
+                  </ul>
+               </div>
+
+               <div class="product-qna max-width">
+                  <h3 class="qna-title">상품 Q&A</h3>
+                  <p class="qna-contents">게시물이 없습니다.</p>
+                   <div class="qna-submit signup-submit">
+                     <input type="submit" value="상품 문의하기">
+                  </div>
+               </div>
+
             </section>
          </main>
 

@@ -1,7 +1,5 @@
 .buy-wrapper {
-   position: relative;
-   height: 100%;
-   height: 950vh;
+   font-family: "Noto Sans KR", sans-serif;
 }
 
 .product-buy {
@@ -13,7 +11,6 @@
    border: var(--border);
    border-radius: 5px;
    height: 32px;
-   font-family: "Noto Sans KR", sans-serif;
    font-size: 13px;
    font-weight: 300;
 }
@@ -22,7 +19,6 @@
 
 .buy-img-info {
    display: flex;
-   font-family: "Noto Sans KR", sans-serif;
    font-weight: 300;
    border-bottom: var(--border);
    padding-bottom: 35px;
@@ -258,7 +254,6 @@ div.buy-btn {
 
 .product-detail {
    max-width: 1200px;
-   font-family: "Noto Sans KR", sans-serif;
 }
 
 .detail-info-list {
@@ -333,15 +328,16 @@ div.buy-btn {
 
 /* 사용후기 */
 
-.detail-info-note {
-   margin-top: 50px;
+.product-notion {
+   margin: 50px auto 120px auto;
+   max-width: 950px;
 }
 
 .info-note-title {
    text-align: center;
    font-family: "Noto Serif KR", serif;
    font-size: 24px;
-   padding-bottom: 35px;
+   padding-bottom: 40px;
 }
 
 .info-note-review {
@@ -373,10 +369,200 @@ div.buy-btn {
    outline: none;
 }
 
-.info-note-form label {
+.info-note-add {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin: 7px 0 30px 0;
+}
+
+.info-add-photo label {
    cursor: pointer;
+   font-size: 13px;
+   font-weight: 500;
+   opacity: 0.8;
+   border: 1px solid rgba(0, 0, 0, 0.2);
+   border-radius: 4px;
+   padding: 8.5px 32px;
 }
 
 #image-input {
    display: none;
+}
+
+.info-note-select {
+   margin: 0 8px;
+   width: 600px;
+}
+
+.star-text {
+   text-align: end;
+}
+
+.review-up-btn {
+   background-color: #3f3f3f;
+   border: none;
+   border-radius: 4px;
+   color: white;
+   padding: 8px 32px;
+   font-size: 14px;
+   display: flex;
+   align-items: center;
+}
+
+.review-up-btn i {
+   margin-right: 7px;
+}
+
+/* 평점 */
+
+.product-score {
+   display: flex;
+   padding: 30px 35px;
+   border: var(--border);
+   margin-bottom: 30px;
+}
+
+.score-avg {
+   width: 11%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.avg-box {
+   background-color: rgba(0, 0, 0, 0.9);
+   color: white;
+   font-size: 40px;
+   font-weight: 400;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 95px;
+   height: 80px;
+   margin-bottom: 7px;
+}
+
+.avg-text {
+   font-size: 13px;
+   font-weight: 300;
+   display: flex;
+   opacity: 0.9;
+}
+
+.product-star {
+   display: flex;
+   flex-direction: column;
+   width: 89%;
+   margin-left: 28px;
+}
+
+.star-score {
+   display: flex;
+   font-size: 13px;
+   margin: 4px 0;
+}
+
+.star-five-meter {
+   background-color: orange;
+   height: 14px;
+   width: 630px;
+   margin: 0 40px 0 20px;
+}
+
+.star-score-meter {
+   height: 14px;
+   width: 630px;
+   background-color: rgba(0, 0, 0, 0.1);
+   margin: 0 40px 0 20px;
+}
+
+.star-score-header,
+.avg-count {
+   opacity: 0.6;
+}
+
+/* 후기 게시판 */
+
+.review-board {
+   border-bottom: var(--border);
+   padding-bottom: 50px;
+}
+
+.board-list li {
+   font-weight: 300;
+   font-size: 13px;
+   display: flex;
+   height: 35px;
+   align-items: center;
+   justify-content: center;
+}
+
+.board-list li div:first-child,
+.board-list li div:nth-child(2) {
+   width: 9%;
+   text-align: center;
+}
+
+.board-list li div:nth-child(3) {
+   width: 60%;
+}
+
+.board-list li div:nth-child(4),
+.board-list li div:last-child {
+   width: 11%;
+   text-align: center;
+}
+
+.board-list-group {
+   border-top: 3px solid black;
+   border-bottom: 1.5px solid rgba(0, 0, 0, 0.4);
+}
+
+.board-list-group div {
+   font-weight: 500;
+   opacity: 0.7;
+}
+
+.group-title {
+   text-align: center;
+}
+
+.board-review {
+   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.review-title {
+   padding-left: 25px;
+}
+
+.review-pic {
+   opacity: 0.6;
+}
+
+.review-score {
+   color: brown;
+}
+
+/* Q&A */
+
+.product-qna {
+   margin-top: 60px;
+}
+
+.qna-title {
+   font-family: "Noto Serif KR", serif;
+   font-size: 24px;
+   text-align: center;
+}
+
+.qna-contents {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   vertical-align: middle;
+   background-color: rgba(128, 128, 128, 0.15);
+   height: 150px;
+   margin-top: 45px;
 }

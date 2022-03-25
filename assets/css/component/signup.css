@@ -68,12 +68,7 @@ th .signup-required__icon {
 /* 요소별 */
 
 .signup {
-   margin-top: 80px;
-}
-
-.signup-wrapper {
-   height: 370vh;
-   position: relative;
+   margin: 80px auto 140px auto;
 }
 
 .signup-main-wrapper {
@@ -160,7 +155,6 @@ th .signup-required__icon {
    border-radius: 5px;
    font-size: 13px;
    font-weight: 400;
-   font-family: "Noto Sans KR", sans-serif;
 }
 
 .signup-add-pass__td input {

@@ -66,6 +66,10 @@
 
 /* 새로 입고된 상품 section */
 
+.new-perfume {
+   margin-bottom: 100px;
+}
+
 .new-card-img {
    height: 400px;
    width: 400px;
