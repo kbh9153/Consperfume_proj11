@@ -8,7 +8,13 @@
       <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500&display=swap" rel="stylesheet" />
       <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet" />
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+      <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
       <link rel="stylesheet" href="./assets/css/style.css" />
+
+      <script src="https://kit.fontawesome.com/6f65ebd0d5.js" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
       <title>Consperfume: Without haste, but without rest.</title>
    </head>
@@ -40,7 +46,6 @@
                   <li><a href="#">고객리뷰</a></li>
                </ul>
 
-               <!-- todo : icon size 조정할 것 -->
                <ul class="nav-bar__icon">
                   <li>
                      <a href="./signup.html"><img src="./assets/icon/user_add_icon_217425.svg" alt="user" /></a>
@@ -57,9 +62,33 @@
 
 
          <main>
-            <div class="main-img max-width">
-               <img class="main-img__slide" src="./assets/img/main_slide_imgs/sauvage.jpg" alt="홍보사진" />
+            <div class="swiper max-width">
+               <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                     <img class="main-img__slide" src="./assets/img/main_slide_imgs/perfume.jpg" alt="floral">
+                  </div>
+                  <div class="swiper-slide">
+                     <img class="main-img__slide" src="./assets/img/main_slide_imgs/sauvage.jpg" alt="sauvage" />
+                  </div>
+                  <div class="swiper-slide">
+                     <img class="main-img__slide" src="./assets/img/main_slide_imgs/channel_n5.jpg" alt="n5">
+                  </div>
+                  <div class="swiper-slide">
+                     <img class="main-img__slide" src="./assets/img/main_slide_imgs/missdior.jpg" alt="n5">
+                  </div>
+                  <div class="swiper-slide">
+                     <img class="main-img__slide" src="./assets/img/main_slide_imgs/y.jpg" alt="n5">
+                  </div>
+               </div>
+               <!-- pagination -->
+               <div class="swiper-pagination"></div>
+               <!-- nav-btn -->
+               <div class="swiper-button-prev"></div>
+               <div class="swiper-button-next"></div>
             </div>
+
+            <div class="header-backimg"></div>
 
             <section class="month-perfume max-width">
                <div class="contents-intro__wrapper max-width">
@@ -85,13 +114,14 @@
                         <div class="card-body perfume-card__body">
                            <p class="card-text month-card-title card-title">피오니 꽃잎이 살결에 닿는 순간</p>
                            <p class="card-text month-card-explain card-explain">선홍빛 뺨으로 물든 미소처럼 편안한 아룸다움을 선사합니다.</p>
+                           </a>
+                           <a class="view-more">view more
+                              <i class="fa-solid fa-angle-right"></i>
+                           </a>
+                        </div>
                      </a>
-                        <a class="view-more"
-                           >view more
-                           <i class="fa-solid fa-angle-right"></i>
-                        </a>
-                     </div>
                   </div>
+            
 
                   <div class="card perfume-card" style="width: 30rem">
                      <img src="./assets/img/product_cards_imgs/Jomalone_popy&barley.jpg" class="card-img-top" alt="Product" />
@@ -134,6 +164,68 @@
                      <p class="contents-intro__title">베스트 셀러</p>
                      <div class="bar"></div>
                   </div>
+
+                  <!-- 베스트셀러 제품 카드 -->
+                  <div class="best-swiper max-width">
+                     <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide best-swiper-slide">
+                           <div class="card best-card" style="width: 30rem">
+                              <a href="./buy.html">
+                                 <img src="./assets/img/product_cards_imgs/Jomalone_popy&barley.jpg" class="best-img-top" alt="Product" />
+                                 <div class="card-body best-card__body">
+                                    <p class="card-text best-card-title card-title">피오니 꽃잎이 살결에 닿는 순간
+                                       <a href="#"><img src="./assets/icon/search_magnifier_icon_145939.svg" alt="search" /></a>
+                                    </p>
+                                    <p class="card-text best-card-explain card-explain">선홍빛 뺨으로 물든 미소처럼 편안한 아룸다움을 선사합니다.
+                                       <span class="best-card-price__cover">80,000원</span>
+                                       <span class="best-card-price__discount">60,000원</span>
+                                    </p>
+                                 </div>
+                              </a>
+                           </div>   
+
+                        </div>
+
+                        <div class="swiper-slide">
+                           <div class="card best-card" style="width: 30rem">
+                              <a href="./buy.html">
+                                 <img src="./assets/img/product_cards_imgs/Jomalone_popy&barley.jpg" class="best-img-top" alt="Product" />
+                                 <div class="card-body best-card__body">
+                                    <p class="card-text best-card-title card-title">피오니 꽃잎이 살결에 닿는 순간
+                                       <a href="#"><img src="./assets/icon/search_magnifier_icon_145939.svg" alt="search" /></a>
+                                    </p>
+                                    <p class="card-text best-card-explain card-explain">선홍빛 뺨으로 물든 미소처럼 편안한 아룸다움을 선사합니다.
+                                       <span class="best-card-price__cover">80,000원</span>
+                                       <span class="best-card-price__discount">60,000원</span>
+                                    </p>
+                                 </div>
+                              </a>
+                           </div>   
+                        </div>
+
+                         <div class="swiper-slide">
+                           <div class="card best-card" style="width: 30rem">
+                              <a href="./buy.html">
+                                 <img src="./assets/img/product_cards_imgs/Jomalone_popy&barley.jpg" class="best-img-top" alt="Product" />
+                                 <div class="card-body best-card__body">
+                                    <p class="card-text best-card-title card-title">피오니 꽃잎이 살결에 닿는 순간
+                                       <a href="#"><img src="./assets/icon/search_magnifier_icon_145939.svg" alt="search" /></a>
+                                    </p>
+                                    <p class="card-text best-card-explain card-explain">선홍빛 뺨으로 물든 미소처럼 편안한 아룸다움을 선사합니다.
+                                       <span class="best-card-price__cover">80,000원</span>
+                                       <span class="best-card-price__discount">60,000원</span>
+                                    </p>
+                                 </div>
+                              </a>
+                           </div>   
+                        </div>
+                     </div>
+                     <!-- nav-btn -->
+                     <div class="swiper-button-prev best-button-prev"></div>
+                     <div class="swiper-button-next best-button-next"></div>
+                  </div>
+
                </div>
             </section>
 
@@ -312,7 +404,10 @@
             </div>
          </footer>
       </div>
-      <script src="https://kit.fontawesome.com/6f65ebd0d5.js" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+      <a id="back-to-top"><i class="fa-solid fa-angle-up fa-2x"></i></a>
+
+      <script src="./assets/js/swiper.js"></script>
+      <script src="./assets/js/backToTop.js"></script>
    </body>
 </html>
