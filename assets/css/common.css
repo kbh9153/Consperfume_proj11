@@ -14,7 +14,7 @@
    border-radius: 50%;
    position: fixed;
    bottom: 70px;
-   right: 55px;
+   right: 40px;
    z-index: 99;
    height: 40px;
    width: 40px;
@@ -26,7 +26,7 @@
 }
 
 #back-to-top.show {
-   opacity: 0.3;
+   opacity: 0.2;
    visibility: visible;
 }
 

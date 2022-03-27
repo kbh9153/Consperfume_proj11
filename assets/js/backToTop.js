@@ -5,7 +5,7 @@ $(function () {
    });
 
    $(window).scroll(function () {
-      if ($(document).scrollTop() > 300) {
+      if ($(document).scrollTop() > 1850) {
          $("#back-to-top").addClass("show");
       } else {
          $("#back-to-top").removeClass("show");

@@ -1,11 +1,7 @@
-.swiper {
+.mySwiper {
    width: 990px;
    height: 710px;
    margin-top: 190px;
-}
-
-.swiper-wrapper {
-   display: flex;
 }
 
 .swiper-slide img {
@@ -13,10 +9,13 @@
    width: 830px;
    height: 670px;
    margin: 0 auto;
-   border-radius: 5px;
+   border-radius: 7px;
    overflow: auto;
 }
 
+.swiper-pagination-bullet:only-child {
+   visibility: hidden !important;
+}
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
    margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 7px);
@@ -28,20 +27,30 @@
 }
 
 .header-backimg {
-   background-image: url(../../img/top-backimg.jpg);
-   top: 0;
-   z-index: 90;
+   width: 100%;
+   height: 760px;
+   background-image: url(./top-backimg.jpg);
+   background-position: center;
+   background-size: cover;
+   position: absolute;
+   top: 150px;
+   filter: blur(4px) brightness(83%);
+   opacity: 0.7;
+   /* z-index: 90; */
 }
 
 /* 베스트셀러 */
-.best-swiper {
-   overflow: hidden;
-   margin-top: 50px;
-   position: relative;
+.bestSwiper {
+   width: 1950px;
+   height: 550px;
+   margin-top: 40px;
 }
 
 .best-swiper-slide {
-   width: 464px !important;
+   display: flex;
+   justify-content: center;
+   width: 450px !important;
+   margin-right: 20px !important;
 }
 
 .best-button-prev,
@@ -49,8 +58,8 @@
    display: block;
    position: absolute;
    color: red;
-   opacity: 0.2;
-   transition: opacity 0.5s ease-in-out;
+   opacity: 0.1;
+   transition: opacity 0.2s ease-in-out;
 }
 
 .best-button-prev:hover,
