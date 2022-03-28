@@ -130,9 +130,13 @@ table {
 a,
 a:link,
 a:after,
-a:before {
+a:before,
+a:visited,
+a:active,
+a:hover {
    text-decoration: none;
    color: #000;
+   cursor: pointer;
 }
 
 * {
