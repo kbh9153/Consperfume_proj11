@@ -15,7 +15,6 @@ function signUpCheck() {
 
    if (id.value == "") {
       alert("아이디를 입력하세요.");
-      id.focus();
       return false;
    }
 
@@ -33,7 +32,6 @@ function signUpCheck() {
 
    if (!pwCheck.test(pw.value)) {
       alert("비밀번호는 영문 대소문자 + 숫자 + 특수문자 조합으로 8 ~ 16자리 입력해야합니다.");
-      pw.focus();
       return false;
    }
 
@@ -47,7 +45,6 @@ function signUpCheck() {
 
    if (name.value == "") {
       alert("이름을 입력하세요.");
-      name.focus();
       return false;
    }
 
@@ -55,7 +52,6 @@ function signUpCheck() {
 
    if (email.value == "") {
       alert("이메일 주소를 입력하세요.");
-      email.focus();
       return false;
    }
 
