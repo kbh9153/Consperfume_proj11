@@ -5,7 +5,7 @@ const checkPw = document.getElementById("checkPw");
 const email = document.getElementById("email");
 const submit = document.getElementById("submit");
 
-const idCheck = /^[a-zA-Z0-9]{4,16}$/;
+const idCheck = /^[a-zA-Z0-9][a-zA-Z0-9]{4,16}$/;
 const pwCheck = /^(?=.*[a-zA-Z])(?=.*[!@#$%^*+=-])(?=.*[0-9]).{8,16}$/;
 const emailCheck = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
 
