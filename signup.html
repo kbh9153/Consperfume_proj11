@@ -84,8 +84,8 @@
                         </th>
                         <td>
                            <!-- todo : 영문 + 숫자만 입력 기능 구현 -->
-                           <input type="text" minlength="4" maxlength="16" required>
-                           <span>(영문소문자/숫자, 4 ~ 16자)</span>
+                           <input type="text" id="id" name="id" required>
+                           <span>(영문 대소문자/숫자, 4 ~ 16자)</span>
                         </td>
                      </tr>
                      <tr class="signup-input-pw">
@@ -95,7 +95,7 @@
                         <td>
                            <!-- todo : 영문 대소문자/숫자/특수문자 조합 기능 구현 -->
                            <!-- todo : input:hover => 비밀번호 작성 조건 알림창 구현 -->
-                           <input type="password" minlength="8" maxlength="16" required>
+                           <input type="password" minlength="8" maxlength="16" id="pw" name="pw" required >
                            <span>(영문 대소문자/숫자/특수문자 중 2가지 이상 조합, 8 ~ 16자)</span>
                         </td>
                      </tr>
@@ -105,7 +105,7 @@
                            <span class="signup-required__icon">*</span></th>
                         <td>
                            <!-- todo : 비밀번호 확인 기능 구현 -->
-                           <input type="password" minlength="8" maxlength="16" required>
+                           <input type="password" minlength="8" maxlength="16" id="checkPw" name="checkPw" required>
                         </td>
                      </tr>
                      <tr class="signup-input-name">
@@ -113,7 +113,7 @@
                            <span class="signup-required__title">이름</span>
                            <span class="signup-required__icon">*</span></th>
                         <td>
-                           <input type="text" required>
+                           <input type="text" id="name" name="name" required>
                         </td>
                      </tr>
                      <tr class="signup-input-address">
@@ -183,7 +183,7 @@
                            <span class="signup-required__title">휴대전화</span>
                            <span class="signup-required__icon">*</span></th>
                         <td>
-                           <select class="form-select form-select-sm signup-num-select" aria-label=".form-select-sm example">
+                           <select class="form-select form-select-sm signup-num-select mobile" aria-label=".form-select-sm example">
                               <option selected>-</option>
                               <option value="1">010</option>
                               <option value="2">011</option>
@@ -193,15 +193,15 @@
                               <option value="6">019</option>
                            </select>
                            <span>-</span>
-                           <input class="signup-input-num" type="text">
+                           <input class="signup-input-num mobile" type="number" required >
                            <span>-</span>
-                           <input class="signup-input-num" type="text">
+                           <input class="signup-input-num mobile" type="number" required >
                         </td>
                      </tr>
                      <tr class="signup-input-email">
                         <th>이메일</th>
                         <td>
-                           <input type="email" required>
+                           <input type="email" id="email" name="email" required>
                         </td>
                      </tr>
                   </table>
@@ -658,7 +658,7 @@ o 로그 기록
                   </div>
 
                   <div class="signup-submit">
-                     <input type="submit" value="회원가입">
+                     <input type="submit" value="회원가입" id="submit">
                   </div>
                   
                </form>
@@ -729,5 +729,6 @@ o 로그 기록
       </div>
 
       <script src="./assets/js/swiper.js"></script>
+      <script src="./assets/js/signUpValidate.js"></script>
    </body>
 </html>

@@ -147,6 +147,7 @@
    background-position: center;
    margin: 0 auto;
    position: relative;
+   overflow: hidden;
 }
 
 .jomalone {
@@ -181,7 +182,7 @@
    align-items: center;
 }
 
-.new-card-title a img {
+.new-card-title img {
    width: 23px;
    height: 23px;
    opacity: 0.3;
@@ -254,20 +255,19 @@
 
 .card-like {
    color: red;
-   width: 40%;
-   height: 40%;
+   width: 110px;
+   height: 110px;
    display: flex;
-   align-items: center;
    justify-content: center;
+   align-items: center;
    position: absolute;
-   right: 90px;
-   bottom: 80px;
+   right: 120px;
+   bottom: 110px;
    opacity: 0;
-   transition: opacity 0.2s ease-in-out;
-   transition: transform 0.2s ease-in-out;
+   transition: transform 0.3s ease-in-out;
 }
 
 .card-like:hover {
-   opacity: 0.9;
+   animation: like 0.4s ease-in-out forwards;
    transform: translateY(-20px);
 }

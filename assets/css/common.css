@@ -1,10 +1,27 @@
+/* variable */
+:root {
+   --border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* animation */
+@keyframes like {
+   0% {
+      opacity: 0;
+   }
+
+   50% {
+      opacity: 0.4;
+   }
+
+   100% {
+      opacity: 0.9;
+   }
+}
+
+/* common */
 .max-width {
    max-width: 1400px;
    margin: 0 auto;
-}
-
-:root {
-   --border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 #back-to-top {
