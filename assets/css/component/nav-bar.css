@@ -108,13 +108,13 @@
    border: none;
    text-align: center;
    font-size: 17px;
-   transform: translate(-51px, 20px) !important;
+   transform: translate(-51px, 55px) !important;
    box-shadow: 0 0 4px 3px #c8b9b6;
    padding: 5px 0 !important;
 }
 
 .dropdown-item {
-   padding: 11px 0 !important;
+   padding: 10px 0 !important;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -122,7 +122,19 @@
    margin-top: 0;
 }
 
+.nav-item {
+   height: 100%;
+   vertical-align: middle;
+   display: flex;
+   align-content: center;
+}
+
+.nav-link {
+   display: flex;
+   align-items: center;
+}
+
 /* todo : 코드 구조 정리 */
 .dropdown-menu-edit {
-   transform: translate(-62px, 20px) !important;
+   transform: translate(-62px, 55px) !important;
 }
