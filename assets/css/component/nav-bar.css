@@ -11,6 +11,11 @@
    top: 0;
 }
 
+/* todo : 코드 구조 정리 */
+.sub-nav {
+   height: 80px;
+}
+
 .nav-bar__logo__img,
 .index-nav-bar__img {
    width: 130px;
@@ -35,6 +40,7 @@
    align-items: center;
 }
 
+/* todo : 코드 구조 정리 */
 .nav-bar__left {
    display: flex;
    height: 65px;
@@ -42,14 +48,17 @@
    align-items: center;
 }
 
+/* todo : 코드 구조 정리 */
 .nav-bar__left li {
-   margin: 0px 25px;
+   padding: 0px 25px;
+   /* width: 100px; */
 }
 
 .nav-bar__division {
    margin: 0px 20px;
 }
 
+/* todo : 코드 구조 정리 */
 .nav-bar__right {
    display: flex;
    height: 65px;
@@ -58,8 +67,9 @@
    margin-right: 65px;
 }
 
+/* todo : 코드 구조 정리 */
 .nav-bar__right li {
-   margin: 0px 30px;
+   padding: 0px 30px;
 }
 
 .nav-bar__icon {
@@ -88,4 +98,31 @@
    width: 2px;
    background-color: black;
    opacity: 0.1;
+}
+
+.dropdown-toggle::after {
+   display: none;
+}
+
+.dropdown-menu {
+   border: none;
+   text-align: center;
+   font-size: 17px;
+   transform: translate(-51px, 20px) !important;
+   box-shadow: 0 0 4px 3px #c8b9b6;
+   padding: 5px 0 !important;
+}
+
+.dropdown-item {
+   padding: 11px 0 !important;
+}
+
+.dropdown:hover .dropdown-menu {
+   display: block;
+   margin-top: 0;
+}
+
+/* todo : 코드 구조 정리 */
+.dropdown-menu-edit {
+   transform: translate(-62px, 20px) !important;
 }

@@ -60,7 +60,7 @@ function signUpCheck() {
       return false;
    }
 
-   // submit !!
+   // ★★★ submit ★★★
    document.join_form.submit();
 }
 
